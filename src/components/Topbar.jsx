@@ -1,4 +1,4 @@
-import { Box, Input, InputGroup, InputLeftElement, IconButton, HStack, Select, Spacer } from "@chakra-ui/react";
+import { Box, Input, InputGroup, InputLeftElement, IconButton, HStack, Select, Spacer, Button } from "@chakra-ui/react";
 import { SearchIcon, AddIcon, QuestionIcon, BellIcon } from "@chakra-ui/icons";
 import { FaFilter, FaSort } from "react-icons/fa";
 
@@ -26,7 +26,9 @@ const Topbar = () => {
       </HStack>
       <Spacer />
       <HStack spacing={4}>
-        <IconButton icon={<AddIcon />} aria-label="Add report" />
+        <Button leftIcon={<AddIcon />} colorScheme="gray" variant="solid">
+          Add report
+        </Button>
         <IconButton icon={<QuestionIcon />} aria-label="Help" />
         <IconButton icon={<BellIcon />} aria-label="Notifications" />
         <IconButton icon={<AddIcon />} aria-label="User profile" />

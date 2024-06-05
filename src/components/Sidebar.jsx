@@ -1,4 +1,4 @@
-import { Box, Text, VStack } from "@chakra-ui/react";
+import { Box, Text, VStack, Image } from "@chakra-ui/react";
 
 const Sidebar = () => {
   return (
@@ -13,6 +13,7 @@ const Sidebar = () => {
       alignItems="flex-start"
     >
       <Box mb={8}>
+        <Image src="/images/sidebar-logo.png" alt="Logo" mb={4} />
         <Text fontSize="xl" fontWeight="bold">
           Project Name
         </Text>

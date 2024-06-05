@@ -13,10 +13,10 @@ const DataTable = () => {
   return (
     <Box w="100%" p={4}>
       <HStack spacing={4} mb={4}>
-        <Button leftIcon={<EditIcon />} colorScheme="blue">
+        <Button leftIcon={<EditIcon />} colorScheme="gray" variant="outline">
           Import
         </Button>
-        <Button leftIcon={<DeleteIcon />} colorScheme="blue">
+        <Button leftIcon={<DeleteIcon />} colorScheme="gray" variant="outline">
           Export
         </Button>
       </HStack>
@@ -45,12 +45,14 @@ const DataTable = () => {
               <Td>{row.data1}</Td>
               <Td>{row.data2}</Td>
               <Td>
-                <Button size="sm">{row.status}</Button>
+                <Button size="sm" variant="outline" colorScheme="gray">
+                  {row.status}
+                </Button>
               </Td>
               <Td>
                 <HStack spacing={2}>
-                  <IconButton icon={<EditIcon />} aria-label="Edit" size="sm" />
-                  <IconButton icon={<DeleteIcon />} aria-label="Delete" size="sm" />
+                  <IconButton icon={<EditIcon />} aria-label="Edit" size="sm" variant="outline" colorScheme="gray" />
+                  <IconButton icon={<DeleteIcon />} aria-label="Delete" size="sm" variant="outline" colorScheme="gray" />
                 </HStack>
               </Td>
             </Tr>
@@ -60,13 +62,13 @@ const DataTable = () => {
       <Box display="flex" justifyContent="space-between" alignItems="center" mt={4}>
         <Text>106 results</Text>
         <HStack spacing={2}>
-          <Button size="sm">1</Button>
-          <Button size="sm">2</Button>
-          <Button size="sm">3</Button>
-          <Button size="sm">4</Button>
-          <Button size="sm">...</Button>
-          <Button size="sm">10</Button>
-          <Button size="sm">11</Button>
+          <Button size="sm" variant="outline" colorScheme="gray">1</Button>
+          <Button size="sm" variant="outline" colorScheme="gray">2</Button>
+          <Button size="sm" variant="outline" colorScheme="gray">3</Button>
+          <Button size="sm" variant="outline" colorScheme="gray">4</Button>
+          <Button size="sm" variant="outline" colorScheme="gray">...</Button>
+          <Button size="sm" variant="outline" colorScheme="gray">10</Button>
+          <Button size="sm" variant="outline" colorScheme="gray">11</Button>
         </HStack>
       </Box>
     </Box>
