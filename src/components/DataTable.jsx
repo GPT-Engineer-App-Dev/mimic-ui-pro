@@ -5,8 +5,8 @@ const DataTable = () => {
   return (
     <Box w="100%" p={4}>
       <HStack mb={4}>
-        <Button leftIcon={<ArrowUpIcon />}>Import</Button>
-        <Button leftIcon={<ArrowDownIcon />}>Export</Button>
+        <Button leftIcon={<ArrowUpIcon />} variant="outline">Import</Button>
+        <Button leftIcon={<ArrowDownIcon />} variant="outline">Export</Button>
       </HStack>
       <Table variant="simple">
         <Thead>
@@ -28,7 +28,7 @@ const DataTable = () => {
               <Td>9,000</Td>
               <Td>Data series</Td>
               <Td>DD/MM/YY</Td>
-              <Td><Button size="sm">Status</Button></Td>
+              <Td><Button size="sm" variant="outline">Status</Button></Td>
               <Td>
                 <HStack spacing={2}>
                   <IconButton icon={<EditIcon />} aria-label="Edit" size="sm" />
