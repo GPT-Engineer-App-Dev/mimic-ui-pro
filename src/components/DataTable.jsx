@@ -1,5 +1,5 @@
 import { Box, Table, Thead, Tbody, Tr, Th, Td, Checkbox, Button, HStack, Spacer, Text, IconButton } from "@chakra-ui/react";
-import { EditIcon, DeleteIcon, SearchIcon, ArrowUpIcon, ArrowDownIcon } from "@chakra-ui/icons";
+import { EditIcon, DeleteIcon, ArrowUpIcon, ArrowDownIcon } from "@chakra-ui/icons";
 
 const DataTable = () => {
   return (
