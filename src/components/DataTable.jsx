@@ -1,12 +1,12 @@
 import { Box, Table, Thead, Tbody, Tr, Th, Td, Checkbox, Button, HStack, Spacer, Text, IconButton } from "@chakra-ui/react";
-import { EditIcon, DeleteIcon } from "@chakra-ui/icons";
+import { EditIcon, DeleteIcon, SearchIcon, ArrowUpIcon, ArrowDownIcon } from "@chakra-ui/icons";
 
 const DataTable = () => {
   return (
     <Box w="100%" p={4}>
       <HStack mb={4}>
-        <Button leftIcon={<SearchIcon />}>Import</Button>
-        <Button leftIcon={<SearchIcon />}>Export</Button>
+        <Button leftIcon={<ArrowUpIcon />}>Import</Button>
+        <Button leftIcon={<ArrowDownIcon />}>Export</Button>
       </HStack>
       <Table variant="simple">
         <Thead>
