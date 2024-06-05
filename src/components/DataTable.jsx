@@ -1,5 +1,5 @@
 import { Box, Table, Thead, Tbody, Tr, Th, Td, Checkbox, Button, HStack, Text, IconButton } from "@chakra-ui/react";
-import { EditIcon, DeleteIcon } from "@chakra-ui/icons";
+import { FaEdit, FaTrash } from "react-icons/fa";
 
 const DataTable = () => {
   const data = Array(10).fill({
@@ -13,8 +13,8 @@ const DataTable = () => {
   return (
     <Box w="100%" p={4}>
       <HStack spacing={4} mb={4}>
-        <Button leftIcon={<EditIcon />}>Import</Button>
-        <Button leftIcon={<DeleteIcon />}>Export</Button>
+        <Button leftIcon={<FaEdit />}>Import</Button>
+        <Button leftIcon={<FaTrash />}>Export</Button>
       </HStack>
       <Table variant="simple">
         <Thead>
@@ -39,8 +39,8 @@ const DataTable = () => {
               <Td><Button size="sm">{row.status}</Button></Td>
               <Td>
                 <HStack spacing={2}>
-                  <IconButton aria-label="Edit" icon={<EditIcon />} size="sm" />
-                  <IconButton aria-label="Delete" icon={<DeleteIcon />} size="sm" />
+                  <IconButton aria-label="Edit" icon={<FaEdit />} size="sm" />
+                  <IconButton aria-label="Delete" icon={<FaTrash />} size="sm" />
                 </HStack>
               </Td>
             </Tr>
