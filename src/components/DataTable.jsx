@@ -1,4 +1,4 @@
-import { Box, Table, Thead, Tbody, Tr, Th, Td, Checkbox, Button, HStack, Text } from "@chakra-ui/react";
+import { Box, Table, Thead, Tbody, Tr, Th, Td, Checkbox, Button, HStack, Text, IconButton } from "@chakra-ui/react";
 import { EditIcon, DeleteIcon } from "@chakra-ui/icons";
 
 const DataTable = () => {
