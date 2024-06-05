@@ -1,6 +1,6 @@
 import { Box, Input, InputGroup, InputLeftElement, IconButton, HStack, Select } from "@chakra-ui/react";
-import { SearchIcon, AddIcon, QuestionIcon, BellIcon } from "@chakra-ui/icons";
-import { FaFilter, FaSort } from "react-icons/fa";
+import { SearchIcon, AddIcon, QuestionIcon } from "@chakra-ui/icons";
+import { FaFilter, FaSort, FaBell, FaUser } from "react-icons/fa";
 
 const TopBar = () => {
   return (
@@ -30,8 +30,8 @@ const TopBar = () => {
       <HStack spacing={4}>
         <IconButton aria-label="Add report" icon={<AddIcon />} />
         <IconButton aria-label="Help" icon={<QuestionIcon />} />
-        <IconButton aria-label="Notifications" icon={<BellIcon />} />
-        <IconButton aria-label="User profile" icon={<BellIcon />} />
+        <IconButton aria-label="Notifications" icon={<FaBell />} />
+        <IconButton aria-label="User profile" icon={<FaUser />} />
       </HStack>
     </Box>
   );
